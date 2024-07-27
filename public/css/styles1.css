@@ -1,0 +1,100 @@
+body{
+    background: radial-gradient(circle, #eee 10%, #bbb 30%, #888 50%, #444 70%, #000);
+}
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    gap: 0.5rem;
+    min-height:43vh;
+    max-height: 93vh;
+    overflow-y: auto;
+}
+.flex-row1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+    gap: 0;
+    background-color: black;
+    color: white;
+}
+.flex3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 1.5rem;
+    gap: 0;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+}
+.info{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.appointment {
+    background-image: radial-gradient(ellipse, skyblue, aliceblue);
+}
+#userInfo{
+    display:none;
+    position:fixed;
+    top: 2.5em;
+    right:-18rem;
+    transform-origin:right right;
+    animation: showMenu 1s ease-in-out forwards;
+}
+.comment{
+    display:none;
+}
+.disease{
+    display: none;
+}
+@keyframes showMenu {
+    0%{
+        transform:translateX(-9rem);
+    }
+    100%{
+        transform: translateX(-18rem);
+    }
+}
+:is(.profile:hover,.profile:focus-within) #userInfo{
+    display:block;
+}
+.myBtn{
+    position: fixed;
+    /* display:none; */
+    background-color: red;
+    text-decoration: none;
+    font-size: 2rem;
+    top: 2.5rem;
+    right: 0;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.myBtn2{
+    /* display:none; */
+    background-color: red;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 2px solid white;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
